@@ -26,6 +26,9 @@ function Form() {
   const [quantity, setQuantity] = useState(5);
   function handlesubmit(e) {
     e.preventDefault();
+
+    const newItem = { description, quantity, packed: false, id: Date.now() };
+    console.log(newItem);
   }
   return (
     <form className="add-form" onSubmit={handlesubmit}>
