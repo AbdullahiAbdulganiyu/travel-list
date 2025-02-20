@@ -20,6 +20,7 @@ function Logo() {
 }
 
 function Form() {
+  function handlesubmit() {}
   return (
     <form className="add-form">
       <h3>What do you need for your trip 😻 </h3>
