@@ -20,7 +20,9 @@ function Logo() {
 }
 
 function Form() {
-  function handlesubmit() {}
+  function handlesubmit(e) {
+    e.preventDefault();
+  }
   return (
     <form className="add-form" onSubmit={handlesubmit}>
       <h3>What do you need for your trip 😻 </h3>
