@@ -36,7 +36,12 @@ function Form() {
           </option>
         ))}
       </select>
-      <input type="text" placeholder="item..." value={description} />
+      <input
+        type="text"
+        placeholder="item..."
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+      />
       <button>Add</button>
     </form>
   );
