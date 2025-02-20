@@ -42,7 +42,7 @@ function PackingList() {
 function Item({ item }) {
   return (
     <li>
-      <span>
+      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.description} {item.quantity}
       </span>
       <button>❌</button>
