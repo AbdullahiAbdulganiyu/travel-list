@@ -22,7 +22,7 @@ function Logo() {
 }
 
 function Form() {
-  const [description, setDescription] = useState();
+  const [description, setDescription] = useState("");
   function handlesubmit(e) {
     e.preventDefault();
   }
