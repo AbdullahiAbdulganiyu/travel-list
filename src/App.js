@@ -39,7 +39,14 @@ function PackingList() {
 }
 
 function Item({ item }) {
-  return <li>{item.description}</li>;
+  return (
+    <li>
+      <span>
+        {item.description} {item.quantity}
+      </span>
+      <button>❌</button>
+    </li>
+  );
 }
 function Stats() {
   return (
