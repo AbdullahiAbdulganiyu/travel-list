@@ -23,7 +23,7 @@ function Logo() {
 
 function Form() {
   const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState(5);
+  const [quantity, setQuantity] = useState(1);
   function handlesubmit(e) {
     e.preventDefault();
 
