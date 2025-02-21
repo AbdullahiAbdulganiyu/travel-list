@@ -26,7 +26,9 @@ function Form() {
   const [quantity, setQuantity] = useState(1);
   const [item, setItem] = useState([]);
 
-  function handleAddItem(item) {}
+  function handleAddItem(item) {
+    setItem((items) => [...items, item]);
+  }
   function handlesubmit(e) {
     e.preventDefault();
 
