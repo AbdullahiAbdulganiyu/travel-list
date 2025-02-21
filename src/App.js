@@ -13,6 +13,10 @@ export default function App() {
     setItem((items) => [...items, item]);
   }
 
+  function handleDeleteItem(id) {
+    setItem((items) => items.filter((item) => item.id !== id));
+  }
+
   return (
     <div className="app">
       <Logo />
