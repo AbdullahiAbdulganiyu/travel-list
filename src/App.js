@@ -9,6 +9,10 @@ const initialItems = [
 export default function App() {
   const [item, setItem] = useState([]);
 
+  function handleAddItem(item) {
+    setItem((items) => [...items, item]);
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -27,9 +31,6 @@ function Form() {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
-  function handleAddItem(item) {
-    setItem((items) => [...items, item]);
-  }
   function handlesubmit(e) {
     e.preventDefault();
 
