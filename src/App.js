@@ -92,7 +92,7 @@ function PackingList({ items, onDeleteItem, onToggleItem }) {
           />
         ))}
       </ul>
-      <div className="action">
+      <div className="action" value={sortBy}>
         <select>
           <option value="input">Sort by input</option>
           <option value="decription">Sort by description</option>
