@@ -115,7 +115,10 @@ function Stats({ items }) {
   const numPacked = items.filter((item) => item.packed).length;
   return (
     <footer className="stats">
-      <em>👜 You have {numItems} items on your list. You have packed X (X%)</em>
+      <em>
+        👜 You have {numItems} items on your list. You have packed {numPacked}{" "}
+        (X%)
+      </em>
     </footer>
   );
 }
