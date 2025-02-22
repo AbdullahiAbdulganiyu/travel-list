@@ -23,7 +23,11 @@ export default function App() {
     <div className="app">
       <Logo />
       <Form onAddItems={handleAddItem} />
-      <PackingList items={item} onDeleteItem={handleDeleteItem} />
+      <PackingList
+        items={item}
+        onDeleteItem={handleDeleteItem}
+        onToggleItem={handleToggleItem}
+      />
       <Stats />
     </div>
   );
