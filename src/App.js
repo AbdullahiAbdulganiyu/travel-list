@@ -117,8 +117,8 @@ function Stats({ items }) {
   return (
     <footer className="stats">
       <em>
-        👜 You have {numItems} items on your list. You have packed {numPacked}{" "}
-        (X%)
+        👜 You have {numItems} items on your list. You have packed {numPacked} (
+        {percentage}%)
       </em>
     </footer>
   );
