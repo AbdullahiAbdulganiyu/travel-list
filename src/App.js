@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "./Logo";
 
 export default function App() {
   const [item, setItem] = useState([]);
@@ -39,10 +40,6 @@ export default function App() {
       <Stats items={item} />
     </div>
   );
-}
-
-function Logo() {
-  return <h1>🌴 Far Away 💼</h1>;
 }
 
 function Form({ onAddItems }) {
